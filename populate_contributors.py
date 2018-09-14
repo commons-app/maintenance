@@ -13,7 +13,7 @@ row_index = 0
 for contributor in response_json:
     table_row = table_row + (
         BASE_STRING.replace("image_url", contributor['avatar_url']).replace("user_name", contributor['login'])).replace(
-        "profile_url", contributor['url'])
+        "profile_url", contributor['html_url'])
     if i % 5 == 0:
         print table_row
         # Usually the first row is the header, here we dont need an header, so making the first row as header
